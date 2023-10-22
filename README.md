@@ -44,4 +44,4 @@ docker stop arch-vnc
 docker start arch-vnc
 ```
 
-**WARNING!!:** The changes aren't ephimeral while start/stop **arch-vnc** container, if you prune this all changes lost.
+**WARNING!!:** The changes aren't ephimeral while start/stop **arch-vnc** container, if you prune it, all changes will be lost.
