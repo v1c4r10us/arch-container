@@ -21,7 +21,7 @@ It can be executed in any cloud instance (GCP, AWS or Azure), from cloud-shell s
 docker build -t myarch .
 ```
 
-**`Run instance enabling VNC service`**
+**`Run container enabling VNC service`**
 ```bash
 docker run -it -d -p 8081:8081 --name arch-vnc myarch bash -c "vncserver :1"
 ```
@@ -31,5 +31,17 @@ docker run -it -d -p 8081:8081 --name arch-vnc myarch bash -c "vncserver :1"
 docker exec -d arch-vnc bash -c "novnc --listen 8081 --vnc localhost:5901"
 ```
 
-**`Connect to instance from Browser`**
+**`Connect to container from Browser`**
 <p align="center"><img src="https://drive.google.com/uc?export=view&id=1l5tR4CGXPquYHBRMw_hLxJGJHjf2ebzN"/></p>
+
+**`Stop container`**
+```bash
+docker stop arch-vnc
+```
+
+**`Start container`**
+```bash
+docker start arch-vnc
+```
+
+**WARNING!!:** The changes aren't ephimeral while start/stop **arch-vnc** container, if you prune this all changes lost.
