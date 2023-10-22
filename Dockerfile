@@ -1,6 +1,5 @@
-FROM archlinux
+FROM archlinux/archlinux
 
-COPY pacman.conf /etc/pacman.conf
 RUN pacman -Syyu --noconfirm
 RUN pacman -S xorg xorg-server xfce4 tigervnc git base-devel go net-tools neofetch figlet lsd --noconfirm
 
