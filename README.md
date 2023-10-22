@@ -32,3 +32,4 @@ docker exec -d arch-vnc bash -c "novnc --listen 8081 --vnc localhost:5901"
 ```
 
 **`Connect to instance from Browser`**
+<p align="center"><img src="https://drive.google.com/uc?export=view&id=1l5tR4CGXPquYHBRMw_hLxJGJHjf2ebzN"/></p>
